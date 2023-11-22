@@ -9,7 +9,7 @@ btn.addEventListener('click', age)
 function age(){
     let input = document.querySelector('[data-age]').value
     let calc = eval (`${input} * 365.25`)
-    display.value = calc.toFixed(2)
+    display.value = Math.round(calc)
 }
 // makes the input display read only
 document.querySelector('[data-display]').readOnly = true
